@@ -11,10 +11,10 @@ function Navbar({ darkMode, setDarkMode }) {
       transition={{ duration: 0.8, delay: 0.2 }}
       className="bg-blue-500 text-white fixed top-0 left-0 right-0 z-50 dark:bg-blue-800 shadow-md p-4 md:p-6 flex justify-between items-center"
     >
-      {/* Logo */}
+   
       <h1 className="text-lg md:text-xl font-bold">Mohamed.DEV</h1>
 
-      {/* Hamburger pour mobile */}
+ 
       <button
         className="md:hidden text-2xl"
         onClick={() => setOpen(!open)}
@@ -22,7 +22,7 @@ function Navbar({ darkMode, setDarkMode }) {
         ☰
       </button>
 
-      {/* Menu */}
+  
       <ul
         className={`${
           open ? "block" : "hidden"
@@ -32,6 +32,7 @@ function Navbar({ darkMode, setDarkMode }) {
           <a
             href="#home"
             className="font-semibold hover:text-white dark:hover:text-blue-500 hover:underline underline-offset-8"
+            onClick={() => setOpen(false)} // ferme le menu quand on clique
           >
             Home
           </a>
@@ -40,6 +41,7 @@ function Navbar({ darkMode, setDarkMode }) {
           <a
             href="#about"
             className="font-semibold hover:text-white dark:hover:text-blue-500 hover:underline underline-offset-8"
+            onClick={() => setOpen(false)}
           >
             About
           </a>
@@ -48,6 +50,7 @@ function Navbar({ darkMode, setDarkMode }) {
           <a
             href="#projects"
             className="font-semibold hover:text-white dark:hover:text-blue-500 hover:underline underline-offset-8"
+            onClick={() => setOpen(false)}
           >
             Projects
           </a>
@@ -56,6 +59,7 @@ function Navbar({ darkMode, setDarkMode }) {
           <a
             href="#contact"
             className="font-semibold hover:text-white dark:hover:text-blue-500 hover:underline underline-offset-8"
+            onClick={() => setOpen(false)}
           >
             Contact
           </a>
