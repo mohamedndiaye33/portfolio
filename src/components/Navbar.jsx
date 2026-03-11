@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 function Navbar({ darkMode, setDarkMode }) {
   const [open, setOpen] = useState(false);
