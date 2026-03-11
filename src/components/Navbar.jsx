@@ -5,10 +5,7 @@ function Navbar({ darkMode, setDarkMode }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <motion.nav
-      initial={{ opacity: 0, y: -70 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.2 }}
+    <nav
       className="bg-blue-500 text-white fixed top-0 left-0 right-0 z-50 dark:bg-blue-800 shadow-md p-4 md:p-6 flex justify-between items-center"
     >
       <h1 className="text-lg md:text-xl font-bold">Mohamed.DEV</h1>
@@ -50,7 +47,7 @@ function Navbar({ darkMode, setDarkMode }) {
           </button>
         </li>
       </ul>
-    </motion.nav>
+    </nav>
   );
 }
 

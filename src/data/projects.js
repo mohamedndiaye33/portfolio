@@ -7,7 +7,7 @@ export const projects = [
     title: "Portfolio React",
     description: "Un portfolio moderne construit avec React, React Router et Tailwind CSS.",
     image: Ordi2,
-    link: "http://localhost:3001/"
+    link: "https://portfolio-six-mu-33.vercel.app/"
   },
   {
     id: 2,
