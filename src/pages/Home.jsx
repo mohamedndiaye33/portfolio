@@ -39,13 +39,12 @@ function Home() {
       <motion.img
         src={ONE}
         alt="Mohamed Ndiaye"
-        className="w-60 h-68 object-cover rounded-full border-4 border-blue-500 shadow-blue-500 hover:shadow-lg  transition-shadow hover:shadow-blue-700"
+        className="w-60 h-68 md:w-64 md:h-66 lg:w-60 lg:h-66 object-cover rounded-full border-4 border-blue-500 shadow-blue-500 hover:shadow-lg transition-shadow hover:shadow-blue-700"
         initial={{ x: 100, opacity: 0, scale: 0.6 }}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
         viewport={{ once: false }}
       />
-
     </div>
   );
 }
